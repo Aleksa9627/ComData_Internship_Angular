@@ -1,0 +1,50 @@
+/* Card */
+.userInfo{
+    border: ridge;
+    margin-top: 25px;
+}
+
+.cont{
+    justify-content: center;
+    padding: 5px;
+}
+
+.mat-card {
+    background-color: rgb(178, 240, 154);
+}
+
+.mat-card-subtitle {
+    font-size: large;
+}
+
+.example-header-image {
+    background-image: url('../../assets/images/user1.png');
+    background-size: cover;
+}
+
+.mat-card-content {
+    font-size: medium;
+}
+
+.mat-card-image {
+    margin: 34px;
+    width: 120px;
+}
+
+
+/* Toolbar */
+
+.example-icon {
+    padding: 0 14px;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.mat-toolbar {
+    position: sticky;
+    background-color: #a2cfe2;
+    height: 100px;
+    color: rgb(0, 0, 0);
+}

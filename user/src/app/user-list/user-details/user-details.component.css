@@ -1,0 +1,13 @@
+.container{
+    background-color: darksalmon;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.details{
+    border: solid;
+    margin: 25px;
+    padding: 15px;
+    text-align: left;
+}

@@ -1,0 +1,33 @@
+<!-- Toolbar -->
+<p>
+    <mat-toolbar>
+        <img mat-card-sm-image src="../../assets/images/comdata.png">
+        <span>Praksa 2021</span>
+        <span class="example-spacer"></span>
+        <span> Aleksa Savkic </span>
+    </mat-toolbar>
+</p>
+<!-- Tab -->
+<mat-tab-group animationDuration="1500ms">
+    <mat-tab label="Card view">
+        <!-- Card view -->
+        <div class="cont" fxLayout="row wrap" fxLayoutGap="30px">
+            <mat-card class="userInfo" fxFlex="30%" fxFlex.xs="85%" fxFlex.sm="80%" fxFlex.md="45%"
+                *ngFor='let user of users'>
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image"></div>
+                    <mat-card-title>User: </mat-card-title>
+                    <mat-card-subtitle>Name: {{user.name}}</mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>Email: {{user.email}}</mat-card-content>
+                <mat-card-content>Gender: {{user.gender}}</mat-card-content>
+                <mat-card-content>Status: {{user.status}}</mat-card-content>
+                <mat-card-content>ID: {{user.id}}</mat-card-content>
+            </mat-card>
+        </div>
+    </mat-tab>
+    <!-- Table -->
+    <mat-tab label="Table view">
+        <usertable></usertable>
+    </mat-tab>
+</mat-tab-group>
